@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" type="image/png" href="images/icons/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="vendor/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="vendor/animate.css">
+
+    <link rel="stylesheet" type="text/css" href="vendor/hamburgers.min.css">
+
+    <link rel="stylesheet" type="text/css" href="vendor/animsition.min.css">
+
+    <link rel="stylesheet" type="text/css" href="vendor/select2.min.css">
+
+    <link rel="stylesheet" type="text/css" href="vendor/daterangepicker.css">
+
+    <link rel="stylesheet" type="text/css" href="vendor/util.css">
+    <link rel="stylesheet" type="text/css" href="vendor/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="container-contact100">
+        <div class="wrap-contact100">
+
+            <span class="contact100-form-title" style="font-size: 26px;">
+                Add Record
+            </span>
+
+
+            <div class="wrap-input100 validate-input myexp" data-validate="Message is required">
+                <span class="label-input100"
+                    style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">My
+                    Experience</span>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <span class="label-input100" style="font-family: Lucida Sans, sans-serif;">Heading</span>
+                        <input type="text" class="form-control" id="resumeheading1" required>
+                    </div>
+                    <div class="col-lg-12">
+                        <span class="label-input100" style="font-family: Lucida Sans, sans-serif;">Date</span>
+                        <input type="text" class="form-control" id="resumedate1" required>
+                    </div>
+                    <div class="col-lg-12">
+                        <span class="label-input100" style="font-family: Lucida Sans, sans-serif;">Company</span>
+                        <input type="text" class="form-control" id="resumecompany1" required>
+                    </div>
+                    <div class="col-lg-12">
+                        <span class="label-input100" style="font-family: Lucida Sans,sans-serif;">Description</span>
+                        <textarea class="input100" name="message" placeholder="Your message here..." id="resumecdesc1"
+                            required></textarea>
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-warning text-white" id="addexperience">Add Field</button>
+
+
+            <div class="wrap-input100 validate-input myedu" data-validate="Message is required">
+                <span class="label-input100"
+                    style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">My
+                    Education</span>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <span class="label-input100"
+                            style="font-family: Lucida Sans, sans-serif;">College/University</span>
+                        <input type="text" class="form-control" id="college1" required>
+                    </div>
+                    <div class="col-lg-12">
+                        <span class="label-input100" style="font-family: Lucida Sans, sans-serif;">Date</span>
+                        <input type="text" class="form-control" id="education1" required>
+                    </div>
+                    <div class="col-lg-12">
+                        <span class="label-input100" style="font-family: Lucida Sans, sans-serif;">Location</span>
+                        <input type="text" class="form-control" id="location1" required>
+                    </div>
+                    <div class="col-lg-12">
+                        <span class="label-input100" style="font-family: Lucida Sans,sans-serif;">Description</span>
+                        <textarea class="input100" name="message" placeholder="Your message here..." id="edudesc1"
+                            required></textarea>
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-warning text-white" id="addeducation">Add Field</button>
+
+
+            <div class="wrap-input100 validate-input myskill" data-validate="Message is required">
+                <span class="label-input100"
+                    style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Personal
+                    Skills</span>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <span class="label-input100"
+                            style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Skill</span>
+                        <input type="text" class="form-control" id="personalskil1">
+                    </div>
+                    <div class="col-lg-12">
+                        <span class="label-input100"
+                            style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Skill
+                            Rating</span>
+                        <input type="text" class="form-control" id="personrating1">
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-warning text-white" id="addskill">Add Field</button>
+
+
+            <div class="wrap-input100 validate-input professionskill" data-validate="Message is required">
+                <span class="label-input100"
+                    style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Professional
+                    Skills</span>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <span class="label-input100"
+                            style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Skill</span>
+                        <input type="text" class="form-control" id="professionskil1">
+                    </div>
+                    <div class="col-lg-12">
+                        <span class="label-input100"
+                            style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Skill
+                            Rating</span>
+                        <input type="text" class="form-control" id="professionrating1">
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-warning text-white" id="professionskill">Add Field</button>
+
+
+            <div class="wrap-input100 validate-input" data-validate="Message is required">
+                <span class="label-input100"
+                    style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Profile
+                    Image</span>
+                <input type="file" id="resumeProfile" class="form-control">
+            </div>
+
+
+
+
+
+
+
+            <div class="container-contact100-form-btn">
+                <div class="wrap-contact100-form-btn">
+                    <div class="contact100-form-bgbtn"></div>
+                    <button id="resumeload" class="contact100-form-btn">
+                        <span>
+                            Submit
+                            <i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
+                        </span>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div id="dropDownSelect1"></div>
+
+    <script src="vendor/jquery-3.2.1.min.js"></script>
+
+    <script src="vendor/animsition.min.js"></script>
+
+    <script src="vendor/popper.js"></script>
+    <script src="vendor/bootstrap.min.js"></script>
+
+    <script src="vendor/select2.min.js"></script>
+    <script>
+        $(".selection-2").select2({
+            minimumResultsForSearch: 20,
+            dropdownParent: $('#dropDownSelect1')
+        });
+    </script>
+
+    <script src="vendor/moment.min.js"></script>
+    <script src="vendor/daterangepicker.js"></script>
+
+    <script src="vendor/countdowntime.js"></script>
+
+    <script src="vendor/main.js"></script>
+
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-23581568-13');
+    </script>
+    <script defer
+        src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993"
+        integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA=="
+        data-cf-beacon='{"rayId":"79dd1b624fe152d3","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2023.2.0","si":100}'
+        crossorigin="anonymous"></script>
+</body>
+<script src="recordSet.js"></script>
+<script>
+    document.querySelector("#resumeProfile").addEventListener('change', function () {
+        const reader = new FileReader();
+        reader.addEventListener('load', function () {
+
+            localStorage.setItem("resumeProfile", reader.result)
+        })
+        reader.readAsDataURL(this.files[0])
+    })
+
+</script>
+
+<script>
+    $(document).ready(function () {
+
+        var count = 1;
+        $("#addexperience").click(function () {
+            count++;
+            $(".myexp").append('<div class="row">\
+                        <div class="col-lg-12">\
+                            <span class="label-input100"style="font-family: Lucida Sans, sans-serif;">Heading</span>\
+                            <input type="text" class="form-control" id="resumeheading'+ count + '" required>\
+                        </div>\
+                        <div class="col-lg-12">\
+                            <span class="label-input100"style="font-family: Lucida Sans, sans-serif;">Date</span>\
+                            <input type="text" class="form-control" id="resumedate'+ count + '" required>\
+                        </div>\
+                        <div class="col-lg-12">\
+                            <span class="label-input100"style="font-family: Lucida Sans, sans-serif;">Company</span>\
+                            <input type="text" class="form-control" id="resumecompany'+ count + '" required>\
+                        </div>\
+                        <div class="col-lg-12">\
+                            <span class="label-input100"\
+                            style="font-family: Lucida Sans,sans-serif;">Description</span>\
+                        <textarea class="input100" name="message" placeholder="Your message here..." id="resumecdesc'+ count + '" required></textarea>\
+                        </div>\
+                    </div>')
+        })
+
+        var educount = 1;
+        $("#addeducation").click(function () {
+            educount++
+            $(".myedu").append('<div class="row">\
+        <div class="col-lg-12">\
+            <span class="label-input100"style="font-family: Lucida Sans, sans-serif;">College/University</span>\
+            <input type="text" class="form-control" id="college'+ educount + '" required>\
+        </div>\
+        <div class="col-lg-12">\
+            <span class="label-input100"style="font-family: Lucida Sans, sans-serif;">Date</span>\
+            <input type="text" class="form-control" id="education'+ educount + '" required>\
+        </div>\
+        <div class="col-lg-12">\
+            <span class="label-input100"style="font-family: Lucida Sans, sans-serif;">Location</span>\
+            <input type="text" class="form-control" id="location'+ educount + '" required>\
+        </div>\
+        <div class="col-lg-12">\
+            <span class="label-input100"\
+            style="font-family: Lucida Sans,sans-serif;">Description</span>\
+        <textarea class="input100" name="message" placeholder="Your message here..." id="edudesc'+ educount + '" required></textarea>\
+        </div>\
+    </div>');
+        })
+
+        var countskill = 1;
+        $("#addskill").click(function () {
+            countskill++
+            $(".myskill").append(' <div class="row">\
+                        <div class="col-lg-12">\
+                            <span class="label-input100"\
+                            style="font-family:Lucida Sans, sans-serif">Skill</span>\
+                            <input type="text" class="form-control" id="personalskil'+ countskill + '">\
+                        </div>\
+                        <div class="col-lg-12">\
+                            <span class="label-input100"\
+                            style="font-family: Lucida Sans,sans-serif">Skill Rating</span>\
+                            <input type="text" class="form-control" id="personrating'+ countskill + '">\
+                        </div>\
+                    </div>')
+        })
+        var profession = 1;
+        $('#professionskill').click(function () {
+            profession++;
+            $(".professionskill").append(' <div class="row">\
+                        <div class="col-lg-12">\
+                            <span class="label-input100"\
+                            style="font-family: Lucida Sans, sans-serif">Skill</span>\
+                            <input type="text" class="form-control" id="professionskil'+ profession + '">\
+                        </div>\
+                        <div class="col-lg-12">\
+                            <span class="label-input100"\
+                            style="font-family: Lucida Sans,sans-serif;">Skill Rating</span>\
+                            <input type="text" class="form-control" id="professionrating'+ profession + '">\
+                        </div>\
+                    </div>')
+
+        })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        $("#resumeload").click(function () {
+            localStorage.setItem("experience", count)
+            localStorage.setItem("education", educount)
+            localStorage.setItem("personalskill", countskill)
+            localStorage.setItem("profesionalskill", profession)
+            for (i = 1; i <= count; i++) {
+                localStorage.setItem("resumeheading" + i, document.getElementById("resumeheading" + i).value)
+                localStorage.setItem("resumedate" + i, document.getElementById("resumedate" + i).value)
+                localStorage.setItem("resumecompany" + i, document.getElementById("resumecompany" + i).value)
+                localStorage.setItem("resumecdesc" + i, document.getElementById("resumecdesc" + i).value)
+            }
+            for (i = 1; i <= educount; i++) {
+                localStorage.setItem("college" + i, document.getElementById("college" + i).value)
+                localStorage.setItem("education" + i, document.getElementById("education" + i).value)
+                localStorage.setItem("location" + i, document.getElementById("location" + i).value)
+                localStorage.setItem("edudesc" + i, document.getElementById("edudesc" + i).value)
+            }
+            for (i = 1; i <= countskill; i++) {
+                localStorage.setItem("personalskil" + i, document.getElementById("personalskil" + i).value)
+                localStorage.setItem("personrating" + i, document.getElementById("personrating" + i).value)
+
+            }
+            for (i = 1; i <= profession; i++) {
+                localStorage.setItem("professionskil" + i, document.getElementById("professionskil" + i).value)
+                localStorage.setItem("professionrating" + i, document.getElementById("professionrating" + i).value)
+
+            }
+        })
+    })
+</script>
+
+
+</html>

@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Form</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" type="image/png" href="images/icons/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="vendor/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="vendor/animate.css">
+
+    <link rel="stylesheet" type="text/css" href="vendor/hamburgers.min.css">
+
+    <link rel="stylesheet" type="text/css" href="vendor/animsition.min.css">
+
+    <link rel="stylesheet" type="text/css" href="vendor/select2.min.css">
+
+    <link rel="stylesheet" type="text/css" href="vendor/daterangepicker.css">
+
+    <link rel="stylesheet" type="text/css" href="vendor/util.css">
+    <link rel="stylesheet" type="text/css" href="vendor/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="robots" content="noindex, follow">
+    <script
+        nonce="609f62a4-412c-4397-9e47-128d3e69eaea">(function (w, d) { !function (f, g, h, i) { f[h] = f[h] || {}; f[h].executed = []; f.zaraz = { deferred: [], listeners: [] }; f.zaraz.q = []; f.zaraz._f = function (j) { return function () { var k = Array.prototype.slice.call(arguments); f.zaraz.q.push({ m: j, a: k }) } }; for (const l of ["track", "set", "debug"]) f.zaraz[l] = f.zaraz._f(l); f.zaraz.init = () => { var m = g.getElementsByTagName(i)[0], n = g.createElement(i), o = g.getElementsByTagName("title")[0]; o && (f[h].t = g.getElementsByTagName("title")[0].text); f[h].x = Math.random(); f[h].w = f.screen.width; f[h].h = f.screen.height; f[h].j = f.innerHeight; f[h].e = f.innerWidth; f[h].l = f.location.href; f[h].r = g.referrer; f[h].k = f.screen.colorDepth; f[h].n = g.characterSet; f[h].o = (new Date).getTimezoneOffset(); if (f.dataLayer) for (const s of Object.entries(Object.entries(dataLayer).reduce(((t, u) => ({ ...t[1], ...u[1] }))))) zaraz.set(s[0], s[1], { scope: "page" }); f[h].q = []; for (; f.zaraz.q.length;) { const v = f.zaraz.q.shift(); f[h].q.push(v) } n.defer = !0; for (const w of [localStorage, sessionStorage]) Object.keys(w || {}).filter((y => y.startsWith("_zaraz_"))).forEach((x => { try { f[h]["z_" + x.slice(7)] = JSON.parse(w.getItem(x)) } catch { f[h]["z_" + x.slice(7)] = w.getItem(x) } })); n.referrerPolicy = "origin"; n.src = "/cdn-cgi/zaraz/s.js?z=" + btoa(encodeURIComponent(JSON.stringify(f[h]))); m.parentNode.insertBefore(n, m) };["complete", "interactive"].includes(g.readyState) ? zaraz.init() : f.addEventListener("DOMContentLoaded", zaraz.init) }(w, d, "zarazData", "script"); })(window, document);</script>
+</head>
+
+<body>
+    <div class="container-contact100">
+        <div class="wrap-contact100">
+
+            <span class="contact100-form-title" style="font-size: 26px;">
+                Add Record
+            </span>
+            <div class="wrap-input100 validate-input" data-validate="Name is required">
+                <span class="label-input100"
+                    style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Your
+                    Name</span>
+                <input class="input100" id="name" type="text" name="name" placeholder="Enter your name">
+                <span class="focus-input100"></span>
+            </div>
+
+
+            <div class="wrap-input100 validate-input" data-validate="Message is required">
+                <span class="label-input100"
+                    style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">About
+                    Us Description</span>
+                <textarea id="description" class="input100" name="message"
+                    placeholder="Your message here..."></textarea>
+                <span class="focus-input100"></span>
+            </div>
+
+            <div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+                <span class="label-input100"
+                    style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Image</span>
+                <div>
+
+                    <input class="form-control form-control-lg" id="aboutPageImage" type="file">
+                </div>
+            </div>
+
+            <div class="wrap-input100 validate-input card1" data-validate="Valid email is required: ex@abc.xyz">
+                <span class="label-input100"
+                    style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Add
+                    Service</span>
+                <div class="row mt-3 mb-3">
+                    <div class="col-lg-12">
+                        <span class="label-input100"
+                            style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Icon</span>
+                        <select name="" class="form-control" id="icon1">
+                            <option value="la la-gamepad">Game Pad</option>
+                            <option value="la la-area-chart">Area Chart</option>
+                            <option value="la la-camera-retro">Camera Retro</option>
+                            <option value="la la-bullhorn">BullHorn</option>
+                            <option value="la la-music">Music</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-12 mt-1">
+                        <span class="label-input100"
+                            style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Heading</span>
+                        <input type="text" class="form-control" placeholder="Enter Heading" id="serviceheading1">
+                    </div>
+                    <div class="col-lg-12 mt-1 mb-1">
+                        <span class="label-input100"
+                            style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Description</span>
+                        <textarea name="" cols="30" rows="2" class="form-control" id="servicedescription1"></textarea>
+                    </div>
+                </div>
+
+            </div>
+
+            <button id="addfield" class="btn btn-warning text-white">Add Fields</button>
+
+
+
+            <div class="wrap-input100 validate-input card12 mt-3" data-validate="Valid email is required: ex@abc.xyz">
+                <span class="label-input100"
+                    style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Fun Facts</span>
+                <div class="row mt-3 mb-3">
+                    <div class="col-lg-12">
+                        <span class="label-input100"
+                            style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Icon</span>
+                        <select name="" class="form-control" id="funicon1">
+                            <option value="la la-headphones">HeadPhone</option>
+                            <option value="la la-trophy">Trophy</option>
+                            <option value="la la-lightbulb-o">LightBulb</option>
+                            <option value="la la-flag-o">Flag</option>
+                            <option value="la la-book">Book</option>
+                            <option value="la la-code">Code</option>
+                            <option value="la la-smile-o">Smile</option>
+                            <option value="la la-bicycle">Bicycle</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-12 mt-1">
+                        <span class="label-input100"
+                            style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Heading</span>
+                        <input type="text" class="form-control" placeholder="Enter Heading" id="funheading1">
+                    </div>
+                  
+                </div>
+
+            </div>
+
+            <button id="funFactsaddfield" class="btn btn-warning text-white">Add Fields</button>
+
+
+            <div class="wrap-input100 validate-input card13 mt-3" data-validate="Valid email is required: ex@abc.xyz">
+                <span class="label-input100"
+                    style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Our Clients</span>
+                <div class="row mt-3 mb-3">
+                    
+                    <div class="col-lg-12 mt-1">
+                        <span class="label-input100"
+                            style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Add Profile</span>
+                        <input type="file" class="form-control" id="cleintprofile1">
+                    </div>
+                  
+                </div>
+
+            </div>
+
+            <button id="cleintadd" class="btn btn-warning text-white">Add Fields</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+          
+            <div class="container-contact100-form-btn">
+                <div class="wrap-contact100-form-btn">
+                    <div class="contact100-form-bgbtn"></div>
+                    <button id="load" class="contact100-form-btn">
+                        <span>
+                            Submit
+                            <i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
+                        </span>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div id="dropDownSelect1"></div>
+
+    <script src="vendor/jquery-3.2.1.min.js"></script>
+
+    <script src="vendor/animsition.min.js"></script>
+
+    <script src="vendor/popper.js"></script>
+    <script src="vendor/bootstrap.min.js"></script>
+
+    <script src="vendor/select2.min.js"></script>
+    <script>
+        $(".selection-2").select2({
+            minimumResultsForSearch: 20,
+            dropdownParent: $('#dropDownSelect1')
+        });
+    </script>
+
+    <script src="vendor/moment.min.js"></script>
+    <script src="vendor/daterangepicker.js"></script>
+
+    <script src="vendor/countdowntime.js"></script>
+
+    <script src="vendor/main.js"></script>
+
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-23581568-13');
+    </script>
+    <script defer
+        src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993"
+        integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA=="
+        data-cf-beacon='{"rayId":"79dd1b624fe152d3","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2023.2.0","si":100}'
+        crossorigin="anonymous"></script>
+</body>
+<script src="recordSet.js"></script>
+
+<script>
+  document.querySelector("#aboutPageImage").addEventListener('change',function(){
+    const reader=new FileReader();
+    reader.addEventListener('load',function(){
+
+       localStorage.setItem("aboutPageImage",reader.result)
+    })
+    reader.readAsDataURL(this.files[0])
+})
+
+
+
+
+
+
+
+
+    $(document).ready(function () {
+
+        var count = 1;
+        $("#addfield").click(function () {
+            count += 1
+            $(".card1").append('<div class="row mt-1 mb-1">\
+                        <span class="label-input100"\
+                           style="font-family: Lucida Sans;margin-left:12px">Icon</span>\
+                        <div class="col-lg-12">\
+                            <select name="" class="form-control" id="icon'+ count + '">\
+                                <option value="la la-gamepad">Game Pad</option>\
+                            <option value="la la-area-chart">Area Chart</option>\
+                            <option value="la la-camera-retro">Camera Retro</option>\
+                            <option value="la la-bullhorn">BullHorn</option>\
+                            <option value="la la-music">Music</option>\
+                            </select>\
+                        </div>\
+                        <div class="col-lg-12 mt-1">\
+                            <span class="label-input100"\
+                           style="font-family: Lucida Sans">Heading</span>\
+                                <input type="text" class="form-control" placeholder="Enter Heading" id="serviceheading'+ count + '">\
+                        </div>\
+                        <div class="col-lg-12 mt-1 mb-1">\
+                            <span class="label-input100"\
+                           style="font-family: "Lucida Sans">Description</span>\
+                                <textarea name="" id="servicedescription'+ count + '" cols="30" rows="2" class="form-control"></textarea>\
+                        </div>\
+                    </div>')
+        })
+        var funfacts=1
+        $("#funFactsaddfield").click(function(){
+            funfacts++
+                $(".card12").append('<div class="row mt-3 mb-3">\
+                    <div class="col-lg-12">\
+                        <span class="label-input100"\
+                            style="font-family:Lucida Sans, sans-serif">Icon</span>\
+                        <select name="" class="form-control" id="funicon'+funfacts+'">\
+                            <option value="la la-headphones">HeadPhone</option>\
+                            <option value="la la-trophy">Trophy</option>\
+                            <option value="la la-lightbulb-o">LightBulb</option>\
+                            <option value="la la-flag-o">Flag</option>\
+                            <option value="la la-book">Book</option>\
+                            <option value="la la-code">Code</option>\
+                            <option value="la la-smile-o">Smile</option>\
+                            <option value="la la-bicycle">Bicycle</option>\
+                        </select>\
+                    </div>\
+                    <div class="col-lg-12 mt-1">\
+                        <span class="label-input100"\
+                            style="font-family:Lucida Sans,sans-serif;">Heading</span>\
+                        <input type="text" class="form-control" placeholder="Enter Heading" id="funheading'+funfacts+'">\
+                    </div></div>');
+        })
+        // document.querySelector("#cleintprofile1").addEventListener('change',function(){
+        //             const reader=new FileReader();
+        //             reader.addEventListener('load',function(){
+
+        //             localStorage.setItem("cleintprofile"1,reader.result)
+        //             })
+        //             reader.readAsDataURL(this.files[0])
+        //         })
+            var clientcounter=1
+        $("#cleintadd").click(function(){
+            clientcounter++
+            $(".card13").append('<div class="row mt-3 mb-3">\
+                    <div class="col-lg-12 mt-1">\
+                        <span class="label-input100"\
+                            style="font-family: Lucida Sans,sans-serif;">Add Profile</span>\
+                        <input type="file" class="form-control" id="cleintprofile'+clientcounter+'">\
+                    </div>\
+                   </div>')
+
+                   document.querySelector("#cleintprofile"+(clientcounter)).addEventListener('change',function(){
+                    const reader=new FileReader();
+                    reader.addEventListener('load',function(){
+
+                    localStorage.setItem("cleintprofile"+clientcounter,reader.result)
+                    })
+                    reader.readAsDataURL(this.files[0])
+                })
+
+        })
+
+        $("#load").click(function () {
+            var name, decr, img;
+            name = document.getElementById("name").value;
+            decr = document.getElementById("description").value;
+            localStorage.setItem("funcounter", funfacts)
+            localStorage.setItem("clientcounter",clientcounter)
+            // img=document.getElementById("formFileLg").files[0].name;
+
+            // alert(img)
+            localStorage.setItem("aboutServiceNumber", count)
+            localStorage.setItem("name", name);
+            localStorage.setItem("desc", decr);
+            JSON.stringify(localStorage.setItem("img", img));
+            for (var i = 1; i <= count; i++) {
+                localStorage.setItem("icon" + i, document.getElementById("icon" + i).value)
+                localStorage.setItem("serviceheading" + i, document.getElementById("serviceheading" + i).value)
+                localStorage.setItem("servicedescription" + i, document.getElementById("servicedescription" + i).value)
+                localStorage.setItem("servicecounter", count)
+            }
+            for(var i=1;i<=funfacts;i++)
+            {
+                localStorage.setItem("funicon" + i, document.getElementById("funicon" + i).value)
+                localStorage.setItem("funheading" + i, document.getElementById("funheading" + i).value)
+            }
+
+            for(var i=1;i<=clientcounter;i++)
+            {
+                localStorage.setItem("funicon" + i, document.getElementById("funicon" + i).value)
+                localStorage.setItem("funheading" + i, document.getElementById("funheading" + i).value)
+            }
+        })
+    })
+
+</script>
+
+</html>
