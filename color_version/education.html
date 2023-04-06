@@ -110,15 +110,43 @@
                     </div>\
                 </div>')
         })
-
+code=105
 $("#added").click(function(){
-    localStorage.setItem("educationcounter",educationCounter)
+    // localStorage.setItem("educationcounter",educationCounter)
+
+
     for(i=1;i<=educationCounter;i++)
     {
-        localStorage.setItem("educayear"+i,document.getElementById("educayear"+i).value)
-        localStorage.setItem("educatitle"+i,document.getElementById("educatitle"+i).value)
-        localStorage.setItem("educaheading"+i,document.getElementById("educaheading"+i).value)
-        localStorage.setItem("educationdescription"+i,document.getElementById("educationdescription"+i).value)
+        var myHeaders = new Headers();
+myHeaders.append("Content-Type", "application/json");
+
+var raw = JSON.stringify({
+  "id": code++,
+  "year": document.getElementById("educayear"+i).value,
+  "location": document.getElementById("educatitle"+i).value,
+  "heading": document.getElementById("educaheading"+i).value,
+  "description": document.getElementById("educationdescription"+i).value
+});
+
+var requestOptions = {
+  method: 'POST',
+  headers: myHeaders,
+  body: raw,
+  redirect: 'follow'
+};
+
+fetch("http://3.111.148.86:8080/saveProfileData?userid=e252edba-4a87-4ea8-b37d-e732759fe377&templateName=first", requestOptions)
+  .then(response => response.text())
+  .then(result => console.log(result))
+  .catch(error => console.log('error', error));
+
+
+
+
+        // localStorage.setItem("educayear"+i,document.getElementById("educayear"+i).value)
+        // localStorage.setItem("educatitle"+i,document.getElementById("educatitle"+i).value)
+        // localStorage.setItem("educaheading"+i,document.getElementById("educaheading"+i).value)
+        // localStorage.setItem("educationdescription"+i,document.getElementById("educationdescription"+i).value)
     }
 })
 

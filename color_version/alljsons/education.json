@@ -1,0 +1,98 @@
+{
+  "education": [
+    {
+      "id": 101,
+      "year": "",
+      "location": "",
+      "heading": "",
+      "description": ""
+    },
+    {
+      "id": 102
+    },
+    {
+      "id": 105,
+      "year": "12/12/2029",
+      "location": "indore",
+      "heading": "technical trainner",
+      "description": "hii this side Pratibha as Technical Trainner"
+    },
+    {
+      "id": 106,
+      "year": "1/20/2023",
+      "location": "gwalior",
+      "heading": "Trainner",
+      "description": "this side Pradeep Sharma for Technical Trainner"
+    },
+    {
+      "id": 107,
+      "year": "11/12/2029",
+      "location": "bhopal",
+      "heading": "technical Trainner",
+      "description": "hiii this side pratibha for working as Developer"
+    },
+    {
+      "id": 108,
+      "year": "1/20/2023",
+      "location": "gwalior",
+      "heading": "Trainner",
+      "description": "this side Pradeep Sharma for Technical Trainner"
+    },
+    {
+      "id": 110,
+      "year": "1/20/2023",
+      "location": "gwalior",
+      "heading": "Trainner",
+      "description": "this side Pradeep Sharma for Technical Trainner"
+    },
+    {
+      "id": 109,
+      "year": "11/12/2029",
+      "location": "bhopal",
+      "heading": "technical Trainner",
+      "description": "hiii this side pratibha for working as Developer"
+    },
+    {
+      "id": 111,
+      "year": "11/12/2029",
+      "location": "bhopal",
+      "heading": "technical Trainner",
+      "description": "hiii this side pratibha for working as Developer"
+    },
+    {
+      "id": 112,
+      "year": "1/20/2023",
+      "location": "gwalior",
+      "heading": "Trainner",
+      "description": "this side Pradeep Sharma for Technical Trainner"
+    },
+    {
+      "id": 113,
+      "year": "11/12/2029",
+      "location": "bhopal",
+      "heading": "technical Trainner",
+      "description": "hiii this side pratibha for working as Developer"
+    },
+    {
+      "id": 114,
+      "year": "1/20/2023",
+      "location": "gwalior",
+      "heading": "Trainner",
+      "description": "this side Pradeep Sharma for Technical Trainner"
+    },
+    {
+      "id": 115,
+      "year": "11/12/2029",
+      "location": "bhopal",
+      "heading": "technical Trainner",
+      "description": "hiii this side pratibha for working as Developer"
+    },
+    {
+      "id": 116,
+      "year": "1/20/2023",
+      "location": "america",
+      "heading": "developer",
+      "description": "this side Dev Verma for Technical Trainner"
+    }
+  ]
+}
